@@ -1,3 +1,4 @@
+from django import http
 from django.shortcuts import render, redirect
 import uuid
 from .models import Url
@@ -16,4 +17,4 @@ def create(request):
 
 def go(request, pk):
     url_details = Url.objects.get(uuid=pk)
-    return redirect('https://'+url_details.link)
+    return redirect(url_details.link)

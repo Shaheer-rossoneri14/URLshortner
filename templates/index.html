@@ -12,24 +12,25 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 1rem;
+  padding: 3rem;
 }
 
 body {
   min-height: 100vh;
   font-family: "Lato", sans-serif;
-  line-height: 1.5;
+  line-height: 2.0;
   color: #111;
+  background-image: linear-gradient(red, black);
 }
 
 main {
   max-width: 720px;
   width: 100%;
-  border: 2.5px solid #330867;
+  border: 2.5px solid #c51b1b;
   border-radius: 2.5px;
   box-shadow: 0 10px 20px rgba(17, 17, 17, 0.125),
     0 5px 5px rgba(17, 17, 17, 0.25);
-  background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+  background-image: linear-gradient(to top, #ff0000 50%, #000000 100%);
 }
 
 h1 {
@@ -44,6 +45,7 @@ button {
   color: inherit;
   border: 0;
   padding: 1rem;
+
 }
 
 input {
@@ -80,7 +82,7 @@ section {
     {% csrf_token %}
   <input type="text" name="link" id="link" placeholder="Enter URL here">
   <div class="buttons">
-    <button type="submit" id="shorten">Shorten</button>
+    <button type="submit" id="shorten"><h3>Shorten</h3></button>
   </div>
   </form>
   
