@@ -15,5 +15,5 @@ def create(request):
         return HttpResponse(uid)
 
 def go(request, pk):
-    url_details = Url.object.get(uuid=pk)
+    url_details = Url.objects.get(uuid=pk)
     return redirect('https://'+url_details.link)
